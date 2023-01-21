@@ -17,7 +17,7 @@ export default function Home({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className='home_subtitle text-xl tracking-tighter font-thin mb-8'>Jr. Javascript FullStack Developer. Computer Technician. Informatics Lover.</motion.h3>
+          className='home_subtitle text-xl tracking-tighter font-thin mb-8'>FullStack Javascript Developer. Computer Technician. Informatics Lover.</motion.h3>
         {/* <div className='flex justify-center gap-[.5rem]'>
           <Link className='home_social-links' href='https://github.com/Lucapandolfelli' target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github-alt"></i></Link>
           <Link className='home_social-links' href='https://www.linkedin.com/in/lucapandolfelli/' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-linkedin-in"></i></Link>

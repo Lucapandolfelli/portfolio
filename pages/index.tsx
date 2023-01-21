@@ -1,4 +1,5 @@
 import Head from 'next/head'
+
 import Home from '../src/components/Home'
 import About from '../src/components/About'
 import Technologies from '../src/components/Technologies'
@@ -6,6 +7,7 @@ import Footer from '../src/components/Footer'
 import AnimatedBackground from '../src/components/AnimatedBackground'
 import Projects from '../src/components/Projects'
 import Experience from '../src/components/Experience'
+import Navbar from '../src/components/Navbar'
 
 export default function Portfolio() {
   return (
@@ -18,6 +20,7 @@ export default function Portfolio() {
       </Head>
       <AnimatedBackground />
       <Home/>
+      <Navbar />
       <About />
       <Projects />
       <Experience />
