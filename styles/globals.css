@@ -66,9 +66,12 @@
 }
 
 body {
-  /* background-color: #2D2B33; */
   background-color: #282B33;
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  transition: all .6s ease;
 }
 
 .hero {
@@ -78,7 +81,6 @@ body {
 .home_title {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  font-size: 8rem;
   /* background-image: linear-gradient(60deg, #E21143, #FFB03A); */
   background-clip: text;
   color: transparent;
@@ -88,7 +90,7 @@ body {
   font-family: 'JetBrainsMono NF';
 }
 
-.home_social-links {
+.social-links_button {
   display: flex;
   width: 40px;
   height: 40px;
@@ -100,15 +102,13 @@ body {
   transition: all .3s ease;
 }
 
-.home_social-links:hover {
+.social-links_button:hover {
   background-color: #3C404D;
 } 
 
 .home_button {
   padding: .65rem 1rem;
   border-radius: .5rem;
-  /* border-image: linear-gradient(to right, #ec4899, rgb(236, 72, 153), #ef4444, rgba(239, 68, 68), #eab308) 1; */
-  width: 145px;
   background-color: #464a57;
   color: #d1d1d1;
   font-weight: 700;
@@ -121,4 +121,8 @@ body {
 
 .about_title {
   font-family: 'JetBrainsMono NF', sans-serif;
+}
+
+footer {
+  border-image: linear-gradient(to right, #ec4899, rgb(236, 72, 153), #ef4444, rgba(239, 68, 68), #eab308) 1;
 }

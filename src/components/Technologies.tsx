@@ -20,13 +20,13 @@ const technologies = [
 
 export default function Technologies({}: Props) {
   return (
-    <section id="technologies" className='h-screen max-w-5xl mx-auto flex flex-col items-center justify-center'>
-      <div className="text-center mb-[5rem]">
+    <section id="technologies" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex flex-col items-center justify-center'>
+      <div className="text-center mb-[3rem]">
         <h3 className='text-2xl'>technologies.</h3>
       </div>
-      <div className='flex flex-row gap-[3rem] justify-center flex-wrap'>
+      <div className='flex flex-row justify-center flex-wrap gap-[1.25rem] xl:gap-[3rem]'>
         {technologies.map((technology) => (
-            <TechnologyCard technology={technology} key={technology.id} />
+          <TechnologyCard technology={technology} key={technology.id} />
         ))}
       </div>
     </section>

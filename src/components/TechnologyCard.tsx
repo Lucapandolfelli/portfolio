@@ -11,11 +11,11 @@ type Props = {
 export default function TechnologyCard({ technology }: Props) {
   const { name, image} = technology
   return (
-    <article className='flex flex-col items-center w-[120px] gap-3'>
-      <div className="border rounded-full h-[120px] w-[120px] border-slate-400 overflow-hidden">
+    <article className='flex flex-col items-center w-[90px] md:w-[120px] gap-2'>
+      <div className="border rounded-full h-[90px] w-[90px] md:h-[120px] md:w-[120px] border-slate-400 overflow-hidden">
         <Image src={exampleImage} alt={name} width={120} height={120} />
       </div>
-      <div>
+      <div className='text-[#d9d9d9]/75'>
         <p>{name}</p>
       </div>
     </article>
