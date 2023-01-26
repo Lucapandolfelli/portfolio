@@ -17,7 +17,7 @@ export default function Home({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className='home_subtitle text-sm tracking-tighter font-thin mb-8 md:text-xl'>FullStack Javascript Developer. Computer Technician. Informatics Lover.</motion.h3>
+          className='font-jetBrains text-sm tracking-tighter font-thin mb-8 md:text-xl'>FullStack Javascript Developer. Computer Technician. Informatics Lover.</motion.h3>
         <div className='flex justify-center gap-[.75rem] text-sm md:text-base'>
           <Link className='home_button w-[125px] md:w-[145px]' href='mailto:lucapandolfelli2002@gmail.com'>Contact Me</Link>
           <Link className='home_button w-[125px] md:w-[145px]' href='#'>Download CV</Link>

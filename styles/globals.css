@@ -86,10 +86,6 @@ body {
   color: transparent;
 }
 
-.home_subtitle {
-  font-family: 'JetBrainsMono NF';
-}
-
 .social-links_button {
   display: flex;
   width: 40px;
@@ -117,10 +113,6 @@ body {
 
 .home_button:hover {
   background-color: #323640;
-}
-
-.about_title {
-  font-family: 'JetBrainsMono NF', sans-serif;
 }
 
 footer {
