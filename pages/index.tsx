@@ -20,7 +20,7 @@ export default function Portfolio() {
       </Head>
       <AnimatedBackground />
       <Home/>
-      <Navbar />
+      {/* <Navbar /> */}
       <About />
       <Projects />
       <Experience />
