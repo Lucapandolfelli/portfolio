@@ -13,3 +13,11 @@ export interface Experience {
   company: string;
   time: string;
 }
+
+export interface Education {
+  id: number;
+  title: string;
+  institute: string;
+  time: string;
+  image: string;
+}

@@ -10,11 +10,11 @@ type Props = {
 export default function ProjectCard({}: Props) {
   /* const { name, image} = project */
   return (
-    <article className="w-[315px] rounded overflow-hidden hover:cursor-pointer">
+    <article className="w-[315px] rounded overflow-hidden hover:cursor-pointer shadow-2xl z-10">
       <div>
         <Image src={exampleImage} alt='project' width={315} className='object-cover h-[180px]' />
       </div>
-      <div>
+      <div className='bg-[#202127] py-3 px-4'>
         <h5 className='font-jetBrains font-thin text-sm'>Proyecto del Curso de Desarrollo Web de Coderhouse</h5>
         {/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ipsum quis iste? Neque unde accusantium laborum voluptatem nostrum optio quis quasi, enim, eum nemo architecto eligendi incidunt. Ex alias porro optio facilis iste. Esse laudantium ipsum repellat eius expedita adipisci!</p>
         <div className='flex gap-[.5rem]'>
