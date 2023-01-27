@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Home({}: Props) {
   return (
-    <section className='sm:px-8 flex items-center justify-center flex-col relative h-screen'>
+    <section className='sm:px-8 flex items-center justify-center flex-col relative h-screen' id='home'>
       <div className='text-center'>
         <motion.h1 
           initial={{ x: 50, opacity: 0 }}
