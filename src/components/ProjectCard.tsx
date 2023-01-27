@@ -34,8 +34,8 @@ export default function ProjectCard({ project }: Props) {
       <div className='bg-[#202127] p-4'>
         <h5 className='font-jetBrains text-sm mb-3'>{ title }</h5>
         <div className="flex gap-[.5rem]">
-          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={githubLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github-alt"></i></Link>
-          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={webLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-solid fa-eye"></i></Link>
+          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={githubLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github"></i></Link>
+          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={webLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-solid fa-paperclip"></i></Link>
         </div>
       </div>
     </motion.article>

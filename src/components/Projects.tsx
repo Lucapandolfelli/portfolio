@@ -16,10 +16,10 @@ const container = {
 }
 
 const projects = [
-  { id: 1, title: 'Proyecto del Curso de Desarrollo Web de Coderhouse', image: 'project1.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-desarrollo-web-coderhouse', webLink: 'https://lucapandolfelli.github.io/proyecto-final-desarrollo-web-coderhouse/' },
-  { id: 2, title: 'Proyecto del Curso de Javascript de Coderhouse', image: 'project2.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-javascript-coderhouse', webLink: 'https://lucapandolfelli.github.io/proyecto-final-javascript-coderhouse/' },
-  { id: 3, title: 'Proyecto del Curso de React de Coderhouse', image: 'project3.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-react-coderhouse', webLink: '#' },
-  { id: 4, title: 'Proyecto del Curso de Desarrollo Backend de Coderhouse', image: 'project4.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-desarrollo-backend-coderhouse', webLink: '#' }
+  { id: 1, title: 'Proyecto del curso de Desarrollo Backend de Coderhouse', image: 'project4.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-desarrollo-backend-coderhouse', webLink: '#' },
+  { id: 2, title: 'Proyecto del curso de React de Coderhouse', image: 'project3.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-react-coderhouse', webLink: '#' },
+  { id: 3, title: 'Proyecto del curso de Javascript de Coderhouse', image: 'project2.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-javascript-coderhouse', webLink: 'https://lucapandolfelli.github.io/proyecto-final-javascript-coderhouse/' },
+  { id: 4, title: 'Proyecto del curso de Desarrollo Web de Coderhouse', image: 'project1.png', githubLink: 'https://github.com/Lucapandolfelli/proyecto-final-desarrollo-web-coderhouse', webLink: 'https://lucapandolfelli.github.io/proyecto-final-desarrollo-web-coderhouse/' },
 ]
 
 export default function Projects({}: Props) {
