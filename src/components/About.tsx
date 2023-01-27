@@ -18,7 +18,7 @@ export default function About({}: Props) {
   return (
     <section id="about" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex flex-col items-center md:flex-row md:justify-center gap-[3rem] relative'>
       <motion.div 
-        initial={{ x: 50, opacity: 0 }} 
+        initial={{ x: -100, opacity: 0 }} 
         whileInView={{ x:0, opacity: 1}} 
         transition={{ duration: .5}} 
         className='rounded-full w-[250px] h-[250px] md:w-[350px] md:h-[350px] overflow-hidden'>

@@ -12,7 +12,7 @@ export default function Home({}: Props) {
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: .5 }}
-          className='home_title text-[4rem] bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 leading-none mb-6 lg:text-[9rem]'>Luca Pandolfelli</motion.h1>
+          className='font-bold text-[4rem] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 leading-none mb-6 lg:text-[9rem]'>Luca Pandolfelli</motion.h1>
         <motion.h3 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -2,15 +2,31 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { motion } from 'framer-motion'
+
 import exampleImage from '../../public/images/screenshot.png'
 
 type Props = {
 }
 
+
+const itemAnimate = {
+  hidden: {
+    opacity: 0,
+    scale: 0
+  },
+  show: {
+    opacity: 1,
+    scale: 1
+  }
+}
+
 export default function ProjectCard({}: Props) {
   /* const { name, image} = project */
   return (
-    <article className="w-[315px] rounded overflow-hidden hover:cursor-pointer shadow-2xl z-10">
+    <motion.article 
+      variants={itemAnimate}
+      className="w-[315px] rounded overflow-hidden hover:cursor-pointer shadow-2xl z-10">
       <div>
         <Image src={exampleImage} alt='project' width={315} className='object-cover h-[180px]' />
       </div>
@@ -22,6 +38,6 @@ export default function ProjectCard({}: Props) {
           <Link className='social-links_button' href='https://github.com/Lucapandolfelli/proyecto-final-desarrollo-web-coderhouse' target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-solid fa-eye"></i></Link>
         </div> */}
       </div>
-    </article>
+    </motion.article>
   )
 }
