@@ -23,10 +23,10 @@ export default function Home({}: Props) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
-          className='font-jetBrains text-sm tracking-tighter font-thin mb-8 md:text-xl'>FullStack Javascript Developer. Computer Technician. Informatics Lover.</motion.h3>
+          className='font-jetBrains text-sm tracking-tighter font-thin mb-8 md:text-xl'>FullStack Javascript Developer. Técnico en Informática. Apasionado por la tecnología.</motion.h3>
         <div className='flex justify-center gap-[.75rem] text-sm md:text-base'>
-          <Link className='home_button w-[125px] md:w-[145px]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='mail'>Contact Me</Link>
-          <button onClick={() => download(fileUrl, fileName)} className='home_button w-[125px] md:w-[145px]'>Download CV</button>
+          <Link className='home_button w-[125px] md:w-[145px]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='mail'>Contáctame</Link>
+          <button onClick={() => download(fileUrl, fileName)} className='home_button w-[125px] md:w-[145px]'>Descargar CV</button>
         </div>
       </div>
       <a href="#about" className='animate-bounce p-4 border rounded-full w-[40px] h-[40px] flex items-center justify-center absolute bottom-4'><i className="fa-solid fa-arrow-down"></i></a>

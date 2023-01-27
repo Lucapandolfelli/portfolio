@@ -19,23 +19,9 @@
 
 @font-face{
   font-family: 'JetBrainsMono NF';
-  src: url('../public/fonts/JetBrainsMono/JetBrains Mono Thin Italic Nerd Font Complete.ttf');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face{
-  font-family: 'JetBrainsMono NF';
   src: url('../public/fonts/JetBrainsMono/JetBrains Mono ExtraLight Nerd Font Complete.ttf');
   font-weight: 200;
   font-style: normal;
-}
-
-@font-face{
-  font-family: 'JetBrainsMono NF';
-  src: url('../public/fonts/JetBrainsMono/JetBrains Mono ExtraLight Italic Nerd Font Complete.ttf');
-  font-weight: 200;
-  font-style: italic;
 }
 
 @font-face{
@@ -47,23 +33,9 @@
 
 @font-face{
   font-family: 'JetBrainsMono NF';
-  src: url('../public/fonts/JetBrainsMono/JetBrains Mono Light Italic Nerd Font Complete.ttf');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face{
-  font-family: 'JetBrainsMono NF';
   src: url('../public/fonts/JetBrainsMono/JetBrains Mono Medium Nerd Font Complete.ttf');
   font-weight: 500;
   font-style: normal;
-}
-
-@font-face{
-  font-family: 'JetBrainsMono NF';
-  src: url('../public/fonts/JetBrainsMono/JetBrains Mono Medium Italic Nerd Font Complete.ttf');
-  font-weight: 500;
-  font-style: italic;
 }
 
 * {
@@ -90,26 +62,6 @@ body {
 .active {
   top: 0;
 }
-
-.hero {
-  height: calc(100vh - 150px);
-}
-
-.social-links_button {
-  display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #323640;
-  padding: 1;
-  justify-content: center;
-  align-items: center;
-  transition: all .3s ease;
-}
-
-.social-links_button:hover {
-  background-color: #3C404D;
-} 
 
 .home_button {
   padding: .65rem 1rem;

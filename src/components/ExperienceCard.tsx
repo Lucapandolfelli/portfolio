@@ -23,7 +23,7 @@ export default function ExperienceCard({ experience }: Props) {
           <p className='text-[#d9d9d9]/75 mt-3'>{ description }</p>
         </div>
         <div className='flex justify-end'>
-          <Link className='social-links_button' href={ link } target={'_blank'} rel='noreferrer' aria-label={ company }><i className="fa-solid fa-eye"></i></Link>
+          <Link className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={ link } target={'_blank'} rel='noreferrer' aria-label={ company }><i className="fa-solid fa-eye"></i></Link>
         </div>
       </div>
     </article>

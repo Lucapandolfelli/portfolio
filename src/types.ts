@@ -21,3 +21,11 @@ export interface Education {
   time: string;
   image: string;
 }
+
+export interface Project {
+  id: number;
+  title: string;
+  image: string;
+  githubLink: string;
+  webLink: string;
+}
