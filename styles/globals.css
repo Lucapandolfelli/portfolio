@@ -59,7 +59,13 @@ body {
   z-index: 20;
 }
 
-.active {
+/* .navbar ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+} */
+
+.show {
   top: 0;
 }
 
