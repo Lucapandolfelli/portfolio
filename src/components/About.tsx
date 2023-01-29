@@ -18,8 +18,8 @@ type Props = {}
 export default function About({}: Props) {
   return (
     <section id="about" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex flex-col items-center md:justify-center relative'>
-      <div className='flex items-top gap-[5rem]'>
-        <div className='flex flex-col items-center gap-[1.5rem]'>
+      <div className='flex flex-col sm:flex-row items-center gap-[3rem] sm:gap-[5rem]'>
+        <div className='flex flex-col items-center gap-[2rem]'>
           <motion.div 
             initial={{ x: -100, opacity: 0 }} 
             whileInView={{ x:0, opacity: 1}} 
@@ -27,10 +27,10 @@ export default function About({}: Props) {
             className='rounded-full w-[250px] h-[250px] md:w-[350px] md:h-[350px] overflow-hidden'>
             <Image src={aboutImage} alt='Luca Pandolfelli' width={350} height={350} />
           </motion.div>
-          <div className='flex flex-col gap-[.5rem]'>
-            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='https://github.com/Lucapandolfelli' target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github pr-[.75rem]"></i>Github<i className="fa-solid fa-up-right-from-square text-[#aaaaaa] text-sm pl-[.5rem]"></i></Link>
-            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='https://www.linkedin.com/in/lucapandolfelli/' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-linkedin-in pr-[.75rem]"></i>LinkedIn<i className="fa-solid fa-up-right-from-square text-[#aaaaaa] text-sm pl-[.5rem]"></i></Link>
-            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-google pr-[.75rem]"></i>Mail<i className="fa-solid fa-up-right-from-square text-[#aaaaaa] text-sm pl-[.5rem]"></i></Link>
+          <div className='flex sm:flex-col gap-[1.5rem] sm:gap-[.5rem]'>
+            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='https://github.com/Lucapandolfelli' target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github pr-[.5rem]"></i>Github</Link>
+            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='https://www.linkedin.com/in/lucapandolfelli/' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-linkedin-in pr-[.5rem]"></i>LinkedIn</Link>
+            <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-google pr-[.5rem]"></i>Mail</Link>
           </div>
         </div>
         <div className='w-[300px] md:w-[600px]'>
