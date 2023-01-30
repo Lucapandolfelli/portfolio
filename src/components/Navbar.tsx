@@ -30,11 +30,11 @@ export default function Navbar({}: Props) {
 
   return (
     <header className={showNavbar}>
-      <div className='flex h-full w-full sm:hidden items-center pl-[2rem]'>
+      <div className='flex h-full w-full sm:hidden items-center pl-[1rem]'>
         <p className='font-jetBrains font-thin'>Luca Pandolfelli</p>
         { toggleNavbar 
-          ? <button onClick={() => setToggleNavbar(false)} className='text-2xl absolute top-[1rem] right-[2rem] sm:hidden'><i className="fa-solid fa-x"></i></button>
-          : <button onClick={() => setToggleNavbar(true)} className='text-2xl absolute top-[1rem] right-[2rem] sm:hidden'><i className="fa-solid fa-bars"></i></button>
+          ? <button onClick={() => setToggleNavbar(false)} className='text-2xl absolute top-[1rem] right-[1rem] sm:hidden'><i className="fa-solid fa-x"></i></button>
+          : <button onClick={() => setToggleNavbar(true)} className='text-2xl absolute top-[1rem] right-[1rem] sm:hidden'><i className="fa-solid fa-bars"></i></button>
         }
       </div>
       {

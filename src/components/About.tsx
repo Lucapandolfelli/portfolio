@@ -33,7 +33,7 @@ export default function About({}: Props) {
             <Link className='text-md transition-all duration-300 ease-linear hover:text-[#6f7381]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-google pr-[.5rem]"></i>Mail</Link>
           </div>
         </div>
-        <div className='w-[300px] md:w-[600px]'>
+        <div className='w-auto px-[2rem] md:w-[600px]'>
           <h3 className='font-jetBrains text-xl md:text-2xl mb-5'>sobre mí.</h3>
           <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
           <p className='mb-[3rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
