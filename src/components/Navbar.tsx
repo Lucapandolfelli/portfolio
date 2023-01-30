@@ -2,6 +2,14 @@ import React, { useEffect, useState } from 'react'
 
 type Props = {}
 
+const navbarItems = [
+  { id: 1, title: 'Inicio', link: '#home' },
+  { id: 2, title: 'Sobre Mí', link: '#about' },
+  { id: 3, title: 'Proyectos', link: '#projects' },
+  { id: 4, title: 'Experiencia', link: '#experience' },
+  { id: 5, title: 'Tecnologías', link: '#technologies' },
+]
+
 export default function Navbar({}: Props) {
   const [showNavbar, setShowNavbar] = useState('navbar')
   const [toggleNavbar, setToggleNavbar] = useState(false)
@@ -30,12 +38,11 @@ export default function Navbar({}: Props) {
         toggleNavbar && 
         <nav className='bg-[#1d1f25] h-screen w-full transition-all duration-500 ease-in sm:h-auto sm:visible flex justify-center items-center'>
           <ul className='font-jetBrains list-none flex flex-col items-center gap-[2rem] sm:flex-row sm:gap-3 text-lg font-thin lowercase'>
-            <li><a href="#home" className='transition-all duration-300 hover:text-amber-600'>Inicio</a><span className='hidden sm:inline pl-1'>,</span></li>
-            <li><a href="#about" className='transition-all duration-300 hover:text-amber-600'>Sobre Mí</a><span className='hidden sm:inline pl-1'>,</span></li>
-            <li><a href="#projects" className='transition-all duration-300 hover:text-amber-600'>Proyectos</a><span className='hidden sm:inline pl-1'>,</span></li>
-            <li><a href="#experience" className='transition-all duration-300 hover:text-amber-600'>Experiencia</a><span className='hidden sm:inline pl-1'>,</span></li>
-            <li><a href="#technologies" className='transition-all duration-300 hover:text-amber-600'>Tecnologías</a><span className='hidden sm:inline pl-1'>,</span></li>
-            <li><a href="#contact" className='transition-all duration-300 hover:text-amber-600'>Contacto</a></li>
+            {navbarItems.map((navItem) => (
+              navItem.id < 5
+              ? <li onClick={() => setToggleNavbar(false)} key={navItem.id}><a href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</a><span className='hidden sm:inline pl-1'>,</span></li>
+              : <li onClick={() => setToggleNavbar(false)} key={navItem.id}><a href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</a></li>
+            ))}
           </ul>
         </nav>
       }
