@@ -22,6 +22,8 @@ export default function Navbar({}: Props) {
 
     if (screen.width > 640) {
       setToggleNavbar(true)
+    } else {
+      setToggleNavbar(false)
     }
   }, [])
 
