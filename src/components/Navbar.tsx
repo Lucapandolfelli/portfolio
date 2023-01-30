@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
 type Props = {}
@@ -42,8 +43,8 @@ export default function Navbar({}: Props) {
           <ul className='font-jetBrains list-none flex flex-col items-center gap-[2rem] sm:flex-row sm:gap-3 text-lg font-thin lowercase'>
             {navbarItems.map((navItem) => (
               navItem.id < 5
-              ? <li onClick={() => setToggleNavbar(false)} key={navItem.id}><a href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</a><span className='hidden sm:inline pl-1'>,</span></li>
-              : <li onClick={() => setToggleNavbar(false)} key={navItem.id}><a href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</a></li>
+              ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden sm:inline pl-1'>,</span></li>
+              : <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
             ))}
           </ul>
         </nav>
