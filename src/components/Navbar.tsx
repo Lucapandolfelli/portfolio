@@ -13,7 +13,7 @@ const navbarItems = [
 
 export default function Navbar({}: Props) {
   const [showNavbar, setShowNavbar] = useState('navbar')
-  const [toggleNavbar, setToggleNavbar] = useState(false)
+  const [toggleNavbar, setToggleNavbar] = useState(true)
 
   const handleToggleNavbar = () => {
     setToggleNavbar(!toggleNavbar)
@@ -43,7 +43,7 @@ export default function Navbar({}: Props) {
           ))}
         </ul>
       </nav>
-      <nav className={ !toggleNavbar ? 'bg-[#1d1f25] fixed left-0 top-0 w-full h-full font-jetBrains flex justify-center transition-all duration-300 ease-in font-thin lowercase sm:hidden' : 'fixed left-[-100%]'}>
+      <nav className={ !toggleNavbar ? 'bg-[#1d1f25] fixed left-0 top-0 w-full h-full font-jetBrains flex justify-center transition-all duration-300 ease-in font-thin lowercase sm:hidden' : 'fixed top-[-100%]'}>
         <ul className='flex flex-col items-center justify-center gap-[2rem]'>
           {navbarItems.map((navItem) => (
             navItem.id < 5
