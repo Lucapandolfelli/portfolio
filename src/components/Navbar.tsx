@@ -15,40 +15,43 @@ export default function Navbar({}: Props) {
   const [showNavbar, setShowNavbar] = useState('navbar')
   const [toggleNavbar, setToggleNavbar] = useState(false)
 
+  const handleToggleNavbar = () => {
+    setToggleNavbar(!toggleNavbar)
+  }
+
   useEffect(() => {
     const changeNavbarVisibility = () => {
       window.scrollY >= 100 ? setShowNavbar('navbar show') : setShowNavbar('navbar')
     }
     window.addEventListener('scroll', changeNavbarVisibility)
-
-    if (screen.width > 640) {
-      setToggleNavbar(true)
-    } else {
-      setToggleNavbar(false)
-    }
   }, [])
 
   return (
     <header className={showNavbar}>
-      <div className='flex h-full w-full sm:hidden items-center pl-[1rem]'>
-        <p className='font-jetBrains font-thin'>Luca Pandolfelli</p>
-        { toggleNavbar 
-          ? <button onClick={() => setToggleNavbar(false)} className='text-2xl absolute top-[1rem] right-[1rem] sm:hidden'><i className="fa-solid fa-x"></i></button>
-          : <button onClick={() => setToggleNavbar(true)} className='text-2xl absolute top-[1rem] right-[1rem] sm:hidden'><i className="fa-solid fa-bars"></i></button>
-        }
+      <div className='flex h-full w-full items-center pl-[1rem] sm:hidden'>
+        <p className='block font-jetBrains font-thin z-[999]'>Luca Pandolfelli</p>
+        <button className='block text-2xl absolute top-[1rem] right-[1rem] z-[999] sm:hidden' onClick={handleToggleNavbar}>
+          { !toggleNavbar ? <i className="fa-solid fa-x"></i> : <i className="fa-solid fa-bars"></i> }
+        </button>
       </div>
-      {
-        toggleNavbar && 
-        <nav className='bg-[#1d1f25] h-screen w-full transition-all duration-500 ease-in sm:h-auto sm:visible flex justify-center items-center'>
-          <ul className='font-jetBrains list-none flex flex-col items-center gap-[2rem] sm:flex-row sm:gap-3 text-lg font-thin lowercase'>
-            {navbarItems.map((navItem) => (
-              navItem.id < 5
-              ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden sm:inline pl-1'>,</span></li>
-              : <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
-            ))}
-          </ul>
-        </nav>
-      }
+      <nav className='hidden bg-[#1d1f25] w-full justify-center items-center sm:flex sm:visible'>
+        <ul className='font-jetBrains list-none flex flex-row items-center gap-3 text-lg font-thin lowercase'>
+          {navbarItems.map((navItem) => (
+            navItem.id < 5
+            ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden pl-1 sm:inline'>,</span></li>
+            : <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
+          ))}
+        </ul>
+      </nav>
+      <nav className={ !toggleNavbar ? 'bg-[#1d1f25] fixed left-0 top-0 w-full h-full font-jetBrains flex justify-center transition-all duration-300 ease-in text-lg font-thin lowercase sm:hidden' : 'fixed left-[-100%]'}>
+        <ul className='flex flex-col items-center justify-center gap-[3rem]'>
+          {navbarItems.map((navItem) => (
+            navItem.id < 5
+            ? <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden pl-1 sm:inline'>,</span></li>
+            : <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
+          ))}
+        </ul>
+      </nav>
     </header>
   )
 }
