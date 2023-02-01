@@ -35,8 +35,8 @@ export default function About({}: Props) {
         </div>
         <div className='w-auto px-[2rem] md:w-[600px]'>
           <h3 className='font-jetBrains text-xl md:text-2xl mb-5'>sobre mí.</h3>
-          <p className='mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
-          <p className='mb-[3rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
+          <p className='mb-3 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
+          <p className='mb-[3rem] leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
           <div>
             <ul className='flex flex-col gap-[1rem]'>
               {educations.map((education) => (

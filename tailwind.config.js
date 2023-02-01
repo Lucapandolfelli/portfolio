@@ -8,7 +8,6 @@ module.exports = {
     extend: {
       fontFamily: {
         jetBrains: ["JetBrainsMono NF"],
-        ubuntu: ["Ubuntu", "sans serif"],
       },
     },
   },

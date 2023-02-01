@@ -12,7 +12,7 @@ export default function Footer({}: Props) {
         <Link className='flex justify-center items-center w-[40px] h-[40px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='linkedin'><i className="fa-brands fa-google"></i></Link>
       </div>
       <div>
-        <h5 className='font-jetBrains font-thin text-sm'>Diseñada y desarrolada por Luca Pandolfelli.</h5>
+        <h5 className='font-jetBrains font-thin text-sm sm:text-base'>Diseñada y desarrolada por Luca Pandolfelli.</h5>
       </div>
     </footer>
   )
