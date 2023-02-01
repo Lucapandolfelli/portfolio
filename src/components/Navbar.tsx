@@ -45,8 +45,8 @@ export default function Navbar({}: Props) {
         <ul className='flex flex-col items-center justify-center gap-[2rem]'>
           {navbarItems.map((navItem) => (
             navItem.id < 5
-            ? <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden pl-1 sm:inline'>,</span></li>
-            : <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
+            ? <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className={ currentRoute === `/${navItem.link}` ? 'text-amber-600' : 'transition-all duration-300 hover:text-amber-600'}>{navItem.title}</Link><span className='hidden pl-1 sm:inline'>,</span></li>
+            : <li key={navItem.id} onClick={handleToggleNavbar}><Link scroll={false} href={navItem.link} className={ currentRoute === `/${navItem.link}` ? 'text-amber-600' : 'transition-all duration-300 hover:text-amber-600'}>{navItem.title}</Link></li>
           ))}
         </ul>
       </nav>
