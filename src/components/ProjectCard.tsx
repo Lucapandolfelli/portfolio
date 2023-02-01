@@ -27,16 +27,12 @@ export default function ProjectCard({ project }: Props) {
   return (
     <motion.article 
       variants={itemAnimate}
-      className="w-[315px] rounded overflow-hidden shadow-2xl z-10">
+      className="aspect-video w-[300px] sm:w-[400px] rounded overflow-hidden relative shadow-2xl hover:cursor-pointer group">
       <div>
-        <Image src={`/images/projects/${image}`} alt='project' width={315} height={180} className='object-cover h-[180px]' />
+        <Image src={`/images/projects/${image}`} alt='project' fill className='transition-all duration-300 ease-linear group-hover:brightness-[.25]'/>
       </div>
-      <div className='bg-[#202127] p-4'>
-        <h5 className='font-jetBrains text-sm mb-3'>{ title }</h5>
-        <div className="flex gap-[.5rem]">
-          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={githubLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github"></i></Link>
-          <Link className='flex justify-center items-center w-[25px] h-[25px] rounded-full bg-[#323640] p-[1rem] transition-all ease-linear duration-300 hover:bg-[#3C404D]' href={webLink} target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-solid fa-paperclip"></i></Link>
-        </div>
+      <div className='absolute w-full h-full px-[2rem] flex justify-center items-center text-center opacity-0 transition-all duration-500 ease-linear group-hover:opacity-100'>
+        <h5 className='font-jetBrains mb-3'>{ title }</h5>
       </div>
     </motion.article>
   )

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 
 type Props = {}
@@ -14,6 +15,9 @@ const navbarItems = [
 export default function Navbar({}: Props) {
   const [showNavbar, setShowNavbar] = useState('navbar')
   const [toggleNavbar, setToggleNavbar] = useState(true)
+
+  const router = useRouter()
+  const currentRoute = router.asPath
 
   const handleToggleNavbar = () => {
     setToggleNavbar(!toggleNavbar)
@@ -38,8 +42,8 @@ export default function Navbar({}: Props) {
         <ul className='font-jetBrains list-none flex flex-row items-center gap-3 text-lg font-thin lowercase'>
           {navbarItems.map((navItem) => (
             navItem.id < 5
-            ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link><span className='hidden pl-1 sm:inline'>,</span></li>
-            : <li key={navItem.id}><Link scroll={false} href={navItem.link} className='transition-all duration-300 hover:text-amber-600'>{navItem.title}</Link></li>
+            ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className={ currentRoute === `/${navItem.link}` ? 'text-amber-600' : 'transition-all duration-300 hover:text-amber-600'}>{navItem.title}<span className='hidden sm:inline'>,</span></Link></li>
+            : <li key={navItem.id}><Link scroll={false} href={navItem.link} className={ currentRoute === `/${navItem.link}` ? 'text-amber-600' : 'transition-all duration-300 hover:text-amber-600'}>{navItem.title}</Link></li>
           ))}
         </ul>
       </nav>

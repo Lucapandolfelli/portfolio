@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ProjectCard from './ProjectCard'
 
 import { motion } from 'framer-motion'
@@ -32,7 +33,7 @@ export default function Projects({}: Props) {
         variants={container}
         initial='hidden'
         whileInView='show'
-        className='flex justify-center gap-[1.5rem] flex-wrap max-w-[700px]'>
+        className='flex justify-center gap-[1.5rem] flex-wrap'>
         {projects.map((project) => (
           <ProjectCard project={project} key={project.id} />
         ))}

@@ -60,6 +60,28 @@ body {
   }
 }
 
+nav::before {
+  content: '[';
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding-right: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav::after {
+  content: ']';
+  font-size: 1.25rem;
+  font-weight: 100;
+  padding-left: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media (max-width: 640px){
+  nav::before, nav::after {
+    content: '';
+  }
+}
+
 .show {
   top: 0;
 }
