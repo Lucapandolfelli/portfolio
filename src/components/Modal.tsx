@@ -16,11 +16,11 @@ export default function Modal({ showModal, project }: Props) {
     <Backdrop showModal={showModal} >
       <div className="bg-[#282B33] rounded-md w-[330px] md:w-[700px] h-fit relative shadow-xl">
         <button className="absolute top-0 left-0 right-0 bottom-[-120%] m-auto sm:bottom-[unset] sm:m-0 sm:left-[unset] sm:top-[-2rem] sm:right-[-2rem] transition-all duration-300 ease-in-out hover:scale-150" onClick={() => showModal(false)}><i className="fa-solid fa-xmark text-2xl"></i></button>
-        <div className="w-full">
+        <div className="hidden sm:block w-full">
           <Image src={`/images/projects/${ project.image }`} alt={ project.title } width={700} height={200} className='rounded-t-md' />
         </div>
         <div className="p-[1.5rem]">
-          <h3 className="text-lg sm:text-2xl mb-1">{ project.title }</h3>
+          <h3 className="text-xl sm:text-2xl mb-1">{ project.title }</h3>
           <hr className="mb-5 border-[#858080]"/>
           <ul className="flex flex-wrap gap-[.5rem] mb-4">
             {project.technologies.map((tech) => (
