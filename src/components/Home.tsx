@@ -25,8 +25,8 @@ export default function Home({}: Props) {
           transition={{ duration: 1.5 }}
           className='font-jetBrains tracking-tighter text-sm font-thin mb-8 md:text-xl'>FullStack Javascript Developer. Técnico en Informática. Apasionado por la tecnología.</motion.h3>
         <div className='flex justify-center gap-[.75rem] text-sm md:text-base'>
-          <Link className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-[.25rem] font-semibold p-[2px] w-[130px] md:w-[145px] transition-all duration-300 ease-in hover:bg-[#323640]' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='mail'><span className='bg-[#282B33] py-[.55rem] px-[.75rem] block rounded-[.25rem] font-semibold'>Contáctame</span></Link>
-          <button onClick={() => download(fileUrl, fileName)} className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-[.25rem] font-semibold p-[2px] w-[130px] md:w-[145px] transition-all duration-300 ease-in hover:bg-[#323640]'><span className='bg-[#282B33] py-[.55rem] px-[.75rem] block rounded-[.25rem] font-semibold'>Descargar CV</span></button>
+          <Link className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-[.25rem] font-semibold p-[1px] w-[130px] md:w-[145px] transition-all duration-300 ease-in flex justify-center items-center' href='mailto:lucapandolfelli2002@gmail.com' target={'_blank'} rel='noreferrer' aria-label='mail'><span className='bg-[#282B33] py-[.55rem] px-[.75rem] block rounded-[.25rem] font-semibold w-full h-full'>Contáctame</span></Link>
+          <button onClick={() => download(fileUrl, fileName)} className='bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-[.25rem] font-semibold p-[1px] w-[130px] md:w-[145px] transition-all duration-300 ease-in flex justify-center items-center'><span className='bg-[#282B33] py-[.55rem] px-[.75rem] block rounded-[.25rem] font-semibold w-full h-full'>Descargar CV</span></button>
         </div>
       </div>
       <Link scroll={false} href="#about" className='animate-bounce border rounded-full w-[40px] h-[40px] flex items-center justify-center absolute bottom-4'>
