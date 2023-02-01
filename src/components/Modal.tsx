@@ -14,23 +14,23 @@ type Props = {
 export default function Modal({ showModal, project }: Props) {
   return (
     <Backdrop showModal={showModal} >
-      <div className="bg-[#282B33] rounded-md w-[700px] h-fit relative shadow-xl">
-        <button className="absolute top-[-2rem] right-[-2rem]" onClick={() => showModal(false)}><i className="fa-solid fa-xmark text-2xl"></i></button>
+      <div className="bg-[#282B33] rounded-md w-[330px] md:w-[700px] h-fit relative shadow-xl">
+        <button className="absolute top-0 left-0 right-0 bottom-[-120%] m-auto sm:bottom-[unset] sm:m-0 sm:left-[unset] sm:top-[-2rem] sm:right-[-2rem] transition-all duration-300 ease-in-out hover:scale-150" onClick={() => showModal(false)}><i className="fa-solid fa-xmark text-2xl"></i></button>
         <div className="w-full">
           <Image src={`/images/projects/${ project.image }`} alt={ project.title } width={700} height={200} className='rounded-t-md' />
         </div>
         <div className="p-[1.5rem]">
-          <h3 className="text-2xl mb-2">{ project.title }</h3>
+          <h3 className="text-lg sm:text-2xl mb-1">{ project.title }</h3>
           <hr className="mb-5 border-[#858080]"/>
-          <ul className="flex gap-[.5rem] mb-4">
+          <ul className="flex flex-wrap gap-[.5rem] mb-4">
             {project.technologies.map((tech) => (
-              <li className="bg-[#464A57] text-sm font-medium rounded-xl px-[.5rem] py-[.15rem]" key={tech}>{tech}</li>
+              <li className="font-jetBrains bg-[#464A57] text-[.75rem] font-medium rounded-xl px-[.65rem] py-[.15rem]" key={tech}>{tech}</li>
             ))}
           </ul>
-          <p className="text-[#d9d9d9]/75 mb-6">{ project.description }</p>
+          <p className="text-sm sm:text-base text-[#d9d9d9]/75 mb-6">{ project.description }</p>
           <div className="flex gap-[1rem]">
-            <Link href={ project.githubLink } target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github"></i><span className="ml-[.5rem] text-sm">Ver Repositorio</span></Link>
-            { project.webLink && <Link href={ project.webLink } target={'_blank'} rel='noreferrer' aria-label={ project.title }><i className="fa-solid fa-eye"></i><span className="ml-[.5rem] text-sm">Ver Demo</span></Link>}
+            <Link href={ project.githubLink } target={'_blank'} rel='noreferrer' aria-label='github'><i className="fa-brands fa-github"></i><span className="ml-[.5rem] text-sm transition-all duration-300 ease-linear hover:text-amber-600">Ver Repositorio</span></Link>
+            { project.webLink && <Link href={ project.webLink } target={'_blank'} rel='noreferrer' aria-label={ project.title }><i className="fa-solid fa-eye"></i><span className="ml-[.5rem] text-sm transition-all duration-300 ease-linear hover:text-amber-600">Ver Demo</span></Link>}
           </div>
         </div>
       </div>
