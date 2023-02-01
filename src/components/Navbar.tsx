@@ -1,16 +1,10 @@
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
+
+import { navbarItems } from '../mocks'
 
 type Props = {}
-
-const navbarItems = [
-  { id: 1, title: 'Inicio', link: '#home' },
-  { id: 2, title: 'Sobre Mí', link: '#about' },
-  { id: 3, title: 'Proyectos', link: '#projects' },
-  { id: 4, title: 'Experiencia', link: '#experience' },
-  { id: 5, title: 'Tecnologías', link: '#technologies' },
-]
 
 export default function Navbar({}: Props) {
   const [showNavbar, setShowNavbar] = useState('navbar')

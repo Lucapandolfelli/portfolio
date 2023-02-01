@@ -5,13 +5,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import aboutImage from '../../public/images/about_image.jpg'
+import { educations } from '../mocks'
 import EducationItem from './EducationItem'
-
-const educations = [
-  { id: 1, title: 'Tecnicatura Universitaria en Programación Informática', institute: 'Universidad Nacional de Quilmes', time: 'mar. 2022 - actualidad', image: 'unq.jpg' },
-  { id: 2, title: 'Carrera de Desarrollo Full Stack', institute: 'Coderhouse', time: 'feb. 2022 - dic. 2022', image: 'coderhouse.png' },
-  { id: 3, title: 'Tecnicatura en Informática Personal y Profesional', institute: 'Instituto Técnico María Reina', time: 'mar. 2015 - dic. 2021', image: 'itmr.jpeg' },
-]
 
 type Props = {}
 
