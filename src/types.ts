@@ -25,6 +25,7 @@ export interface Education {
 export interface Project {
   id: number;
   title: string;
+  description: string;
   image: string;
   githubLink: string;
   webLink: string;
