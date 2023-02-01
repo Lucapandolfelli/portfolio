@@ -27,6 +27,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
+  technologies: Array<string>;
   githubLink: string;
   webLink: string;
 }

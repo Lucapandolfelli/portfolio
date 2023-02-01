@@ -39,7 +39,7 @@ export default function Navbar({}: Props) {
         </button>
       </div>
       <nav className='hidden bg-[#1d1f25] w-full justify-center items-center sm:flex sm:visible'>
-        <ul className='font-jetBrains list-none flex flex-row items-center gap-3 text-lg font-thin lowercase'>
+        <ul className='font-jetBrains list-none flex flex-row items-center gap-3 text-md font-thin lowercase'>
           {navbarItems.map((navItem) => (
             navItem.id < 5
             ? <li key={navItem.id}><Link scroll={false} href={navItem.link} className={ currentRoute === `/${navItem.link}` ? 'text-amber-600' : 'transition-all duration-300 hover:text-amber-600'}>{navItem.title}<span className='hidden sm:inline'>,</span></Link></li>
