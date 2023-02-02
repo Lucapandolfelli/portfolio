@@ -12,7 +12,7 @@ export default function Education() {
         <h3 className='font-jetBrains text-xl md:text-2xl'>educación.</h3>
       </div>
       <div>
-        <ul className='flex flex-col gap-[1rem]'>
+        <ul className='flex flex-col gap-[1.5rem]'>
           {educations.map((education) => (
             <EducationItem education={education} key={education.id} />
           ))}

@@ -1,7 +1,9 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 
-import { Education } from "../types";
+import { motion } from "framer-motion"
+
+import { Education } from "../types"
 
 type Props = {
   education: Education,
@@ -10,7 +12,11 @@ type Props = {
 
 export default function EducationItem({ education }: Props){
   return (
-    <article className='bg-[#202127] p-[2rem] rounded-md flex gap-[1.5rem] shadow-xl'>
+    <motion.article 
+      initial={{ opacity: 0, x: '-100%' }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: .75 }}
+      className='bg-[#202127] p-[2rem] rounded-md flex gap-[1.5rem] shadow-xl'>
       <div className="w-[80px] h-[80px]">
         <Image src={`/images/${ education.image }`} alt={ education.institute } width={80} height={80} className='rounded-full' />
       </div>
@@ -19,6 +25,6 @@ export default function EducationItem({ education }: Props){
         <p className='text-[#abaeb9] font-semibold mb-1'>{ education.institute }</p>
         <span className='text-sm font-thin text-[#6c6f7c]'>{ education.time }</span>
       </div>
-    </article>
+    </motion.article>
   )
 }
