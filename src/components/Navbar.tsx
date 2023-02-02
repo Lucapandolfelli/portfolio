@@ -27,7 +27,7 @@ export default function Navbar({}: Props) {
   return (
     <header className={showNavbar}>
       <div className='flex h-full w-full items-center pl-[1rem] sm:hidden'>
-        <p className='block font-jetBrains font-thin z-[999]'>Luca Pandolfelli</p>
+        <Link scroll={false} href='#home'><p className='block font-jetBrains font-thin z-[999]'>Luca Pandolfelli</p></Link>
         <button className='block text-2xl absolute top-[1rem] right-[1rem] z-[999] sm:hidden' onClick={handleToggleNavbar}>
           { !toggleNavbar ? <i className="fa-solid fa-x"></i> : <i className="fa-solid fa-bars"></i> }
         </button>
