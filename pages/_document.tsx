@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang='es'>
       <Head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Luca Pandolfelli" />
         <meta name="description" content="Portfolio de Luca Pandolfelli. Fullstack Javascript Developer. Técnico en Informática. Apasionado por la tecnología." />
         <link rel="icon" href="/favicon.ico" />

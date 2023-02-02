@@ -15,6 +15,7 @@ export default function Portfolio() {
     <div className='text-[#d9d9d9] relative'>
       <Head>
         <title>Luca Pandolfelli</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <AnimatedBackground />
       <Home/>
