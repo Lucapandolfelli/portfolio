@@ -15,8 +15,8 @@ export default function Home({}: Props) {
     <section className='sm:px-8 flex items-center justify-center flex-col relative h-screen' id='home'>
       <div className='text-center'>
         <motion.h1 
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: .5 }}
           className='font-bold text-[4.25rem] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 leading-none tracking-tighter px-[12px] mb-6 xl:text-[10rem]'>Luca Pandolfelli.</motion.h1>
         <motion.h3 
