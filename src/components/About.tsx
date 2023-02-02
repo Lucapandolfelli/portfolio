@@ -5,8 +5,6 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import aboutImage from '../../public/images/about_image.jpg'
-import { educations } from '../mocks'
-import EducationItem from './EducationItem'
 
 type Props = {}
 
@@ -32,13 +30,6 @@ export default function About({}: Props) {
           <h3 className='font-jetBrains text-xl md:text-2xl mb-5'>sobre mí.</h3>
           <p className='mb-3 leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
           <p className='mb-[3rem] leading-relaxed'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita recusandae praesentium sed, dolorum impedit, veniam, nostrum aut ipsum debitis sint vero ea dicta voluptatum. Ab nesciunt quasi corrupti quisquam quaerat!</p>
-          <div>
-            <ul className='flex flex-col gap-[1rem]'>
-              {educations.map((education) => (
-                <EducationItem education={education} key={education.id} />
-              ))}
-            </ul> 
-          </div>
         </div>
       </div>
     </section>

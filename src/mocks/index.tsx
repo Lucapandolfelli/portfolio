@@ -3,15 +3,16 @@ import { Skill, Experience, Education, Project } from '../types'
 export const navbarItems = [
   { id: 1, title: 'Inicio', link: '#home' },
   { id: 2, title: 'Sobre Mí', link: '#about' },
-  { id: 3, title: 'Proyectos', link: '#projects' },
-  { id: 4, title: 'Experiencia', link: '#experience' },
-  { id: 5, title: 'Tecnologías', link: '#technologies' },
+  { id: 3, title: 'Educación', link: '#education' },
+  { id: 4, title: 'Proyectos', link: '#projects' },
+  { id: 5, title: 'Experiencia', link: '#experience' },
+  { id: 6, title: 'Tecnologías', link: '#technologies' },
 ]
 
 export const educations: Array<Education> = [
-  { id: 1, title: 'Tecnicatura Universitaria en Programación Informática', institute: 'Universidad Nacional de Quilmes', time: 'mar. 2022 - actualidad', image: 'unq.jpg' },
-  { id: 2, title: 'Carrera de Desarrollo Full Stack', institute: 'Coderhouse', time: 'feb. 2022 - dic. 2022', image: 'coderhouse.png' },
-  { id: 3, title: 'Tecnicatura en Informática Personal y Profesional', institute: 'Instituto Técnico María Reina', time: 'mar. 2015 - dic. 2021', image: 'itmr.jpeg' },
+  { id: 1, title: 'Tecnicatura Universitaria en Programación Informática', institute: 'Universidad Nacional de Quilmes', time: '2022 - En Curso', image: 'unq.jpg' },
+  { id: 2, title: 'Carrera de Desarrollo Full Stack', institute: 'Coderhouse', time: '2022 (10 meses)', image: 'coderhouse.png' },
+  { id: 3, title: 'Tecnicatura en Informática Personal y Profesional', institute: 'Instituto Técnico María Reina', time: '2015 - 2021', image: 'itmr.jpeg' },
 ]
 
 export const projects: Array<Project> = [

@@ -8,6 +8,7 @@ import AnimatedBackground from '../src/components/AnimatedBackground'
 import Projects from '../src/components/Projects'
 import Experience from '../src/components/Experience'
 import Navbar from '../src/components/Navbar'
+import Education from '../src/components/Education'
 
 export default function Portfolio() {
   return (
@@ -22,6 +23,7 @@ export default function Portfolio() {
       <Home/>
       <Navbar />
       <About />
+      <Education />
       <Projects />
       <Experience />
       <Technologies />

@@ -9,16 +9,15 @@ type Props = {
 }
 
 export default function EducationItem({ education }: Props){
-  const { title, institute, time, image } = education;
   return (
-    <article className='flex gap-[1rem]'>
-      <div className='rounded-full w-[40px] h-[40px] overflow-hidden mt-2'>
-        <Image src={`/images/${image}`} alt={ institute } width={40} height={40} className='object-cover' />
+    <article className='bg-[#202127] p-[2rem] rounded-md flex gap-[1.5rem] shadow-xl'>
+      <div className="w-[80px] h-[80px]">
+        <Image src={`/images/${ education.image }`} alt={ education.institute } width={80} height={80} className='rounded-full' />
       </div>
-      <div>
-        <h5 className='text-lg'>{ title }</h5>
-        <p className='text-[#d9d9d9]/75'>{ institute }</p>
-        <span className='font-thin text-sm text-[#d9d9d9]/50'>{ time }</span>
+      <div className='w-full'>
+        <h5 className='text-xl tracking mb-2'>{ education.title }</h5>
+        <p className='text-[#abaeb9] font-semibold mb-1'>{ education.institute }</p>
+        <span className='text-sm font-thin text-[#6c6f7c]'>{ education.time }</span>
       </div>
     </article>
   )
