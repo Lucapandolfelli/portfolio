@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang='es'>
       <Head>
-        <meta name="description" content="Luca Pandolfellis's developer portfolio." />
+        <meta name="description" content="Portfolio de Luca Pandolfelli. Fullstack Javascript Developer. Técnico en Informática. Apasionado por la tecnología." />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></link> 
       </Head>
