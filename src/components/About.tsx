@@ -16,7 +16,7 @@ export default function About({}: Props) {
           initial={{ x: -100, opacity: 0 }} 
           whileInView={{ x:0, opacity: 1}} 
           transition={{ duration: .5}} 
-          className='rounded-full w-[250px] h-[250px] md:w-[350px] md:h-[350px] overflow-hidden'>
+          className='bg-[#1d1f25] rounded-full w-[250px] h-[250px] md:w-[350px] md:h-[350px] overflow-hidden'>
           <Image src={ image } alt='Luca Pandolfelli' width={350} height={350} />
         </motion.div>
         <div className='w-[310px] md:w-[600px]'>
