@@ -11,8 +11,8 @@ type Props = {
 
 export default function ExperienceCard({ experience }: Props) {
   return (
-    <article className="w-[300px] md:w-[350px] rounded-md overflow-hidden shadow-2xl z-10">
-      <div className={`bg-${ experience.background_image } bg-cover w-full flex justify-center items-center h-[170px]`}>
+    <article className="w-[300px] md:w-[400px] rounded-md overflow-hidden shadow-2xl z-10">
+      <div className={`bg-${ experience.background_image } bg-center bg-cover w-full flex justify-center items-center h-[170px] md:h-[210px]`}>
         <Image src={`/images/${ experience.image}`} alt={ experience.company } width={150} height={150} className='object-cover' />
       </div>
       <div className='bg-[#202127] p-5 flex flex-col gap-[1rem]'>

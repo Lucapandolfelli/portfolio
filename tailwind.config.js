@@ -11,7 +11,8 @@ module.exports = {
       },
       backgroundImage: {
         caccm: "url('/images/caccm_background.png')",
-        harasmaryland: "url('/images/harasmaryland_background.png')",
+        harasmaryland:
+          "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/images/harasmaryland_background.png')",
       },
     },
   },
