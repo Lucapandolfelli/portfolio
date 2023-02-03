@@ -12,6 +12,7 @@ export interface Experience {
   link: string;
   company: string;
   time: string;
+  background_image: string;
 }
 
 export interface Education {
