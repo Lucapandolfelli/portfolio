@@ -18,7 +18,7 @@ export default function Home({}: Props) {
           initial={{ y: -100, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: .5 }}
-          className='font-bold text-[4.25rem] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 leading-none tracking-tighter px-[12px] mb-6 xl:text-[10rem]'>Luca Pandolfelli.</motion.h1>
+          className='font-bold text-[4.25rem] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 leading-none tracking-tighter px-[12px] mb-6 lg:text-[9rem] xl:text-[10rem]'>Luca Pandolfelli.</motion.h1>
         <motion.h3 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

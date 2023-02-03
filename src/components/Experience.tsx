@@ -21,9 +21,9 @@ const container = {
 
 export default function Experience({}: Props) {
   return (
-    <section id="experience" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex justify-center items-center flex-col gap-[3rem] md:gap-[4rem]'>
+    <section id="experience" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex justify-center items-center flex-col gap-[3rem] xl:gap-[4rem]'>
       <div className="text-center">
-        <h3 className='font-jetBrains text-xl md:text-2xl'>experiencia laboral.</h3>
+        <h3 className='font-jetBrains text-xl xl:text-2xl'>experiencia laboral.</h3>
       </div>
       <motion.div 
         variants={container}

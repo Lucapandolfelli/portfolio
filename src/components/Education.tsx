@@ -7,9 +7,9 @@ type Props = {}
 
 export default function Education() {
   return (
-    <section id="education" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex justify-center items-center flex-col gap-[3rem] md:gap-[4rem]'>
+    <section id="education" className='min-h-screen max-w-5xl mx-auto py-[5rem] flex justify-center items-center flex-col gap-[3rem] xl:gap-[4rem]'>
       <div className="text-center">
-        <h3 className='font-jetBrains text-xl md:text-2xl'>educación.</h3>
+        <h3 className='font-jetBrains text-xl xl:text-2xl'>educación.</h3>
       </div>
       <div>
         <ul className='flex flex-col gap-[1.5rem]'>

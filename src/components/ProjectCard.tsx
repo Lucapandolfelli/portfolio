@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: Props) {
       <motion.article 
       variants={itemAnimate}
       onClick={() => setShowModal(true)}
-      className="aspect-video w-[300px] sm:w-[400px] rounded overflow-hidden relative shadow-2xl hover:cursor-pointer group">
+      className="aspect-video w-[300px] lg:w-[370px] xl:w-[400px] rounded overflow-hidden relative shadow-2xl hover:cursor-pointer group">
         <div>
           <Image src={`/images/projects/${image}`} alt='project' fill className='transition-all duration-300 ease-linear group-hover:brightness-[.25]'/>
         </div>
