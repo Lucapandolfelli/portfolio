@@ -16,9 +16,9 @@ export default function Modal({ showModal, project }: Props) {
   return (
     <Backdrop showModal={showModal} >
       <motion.div 
-        initial={{ opacity: 0, scale: 1 }}
-        animate={{ opacity: 1, scale: 1.05 }}
-        exit={{ opacity: 0, scale: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
         transition={{ duration: .25 }}
         className="bg-[#282B33] rounded-md w-[310px] lg:w-[500px] xl:w-[700px] h-fit relative shadow-xl z-50">
         <button className="absolute top-0 left-0 right-0 bottom-[-120%] m-auto sm:bottom-[unset] sm:m-0 sm:left-[unset] sm:top-[-2rem] sm:right-[-2rem] transition-all duration-300 ease-in-out hover:scale-[1.05]" onClick={() => showModal(false)}><i className="fa-solid fa-xmark text-2xl"></i></button>
