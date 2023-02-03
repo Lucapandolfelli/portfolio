@@ -9,7 +9,7 @@ export default function Document() {
         <meta name="description" content="Portfolio de Luca Pandolfelli. Fullstack Javascript Developer. Técnico en Informática. Apasionado por la tecnología." />
         <meta property="og:title" content="Luca Pandolfelli Portfolio"/>
         <meta property="og:url" content="https://lucapandolfelli.com"/>
-        <meta property="og:image" content="https://github.com/Lucapandolfelli/portfolio/blob/main/public/images/screenshot.png"/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/Lucapandolfelli/portfolio/main/public/images/screenshot.png"/>
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
