@@ -20,7 +20,7 @@ export default function About({}: Props) {
         </motion.div>
         <div className='w-[310px] md:w-[450px] xl:w-[600px]'>
           <h3 className='font-jetBrains text-xl xl:text-2xl mb-5 lg:mb-[3rem]'>sobre mí.</h3>
-          <div className='text-[#d9d9d9]/80 text-lg mb-3 leading-relaxed'>
+          <div className='text-[#d9d9d9]/80 md:text-lg mb-3 leading-relaxed'>
             <p className='mb-3'>Holaa, soy <span className='text-amber-600 font-semibold'>Luca</span>. <span className='font-semibold text-[#d9d9d9]'>Fullstack Javascript Developer</span> y <span className='font-semibold text-[#d9d9d9]'>Técnico en Informática</span>. Tras varios años de estudio, me encuentro en búsqueda de mi primer trabajo formal como desarrollador web.</p>
             <p className='mb-3'>Soy un apasionado por el aprendizaje, siempre busco algo nuevo para aprender y asi poder mejorar día a día. Destaco como fuertes puntos de mi personalidad la <span className='font-semibold text-[#d9d9d9]'>responsabilidad</span> y la <span className='font-semibold text-[#d9d9d9]'>perseverancia</span>.</p>
             <p className='mb-5'>Desde fines de 2021 dediqué la gran parte de mi tiempo en convertirme en un desarrollador web, tanto de forma <span className='font-semibold text-[#d9d9d9]'>autodidática</span> como realizando cursos. Actualmente curso una tecnicatura en programación en la universidad y me estoy enfocando en mejorar en frameworks de <span className='font-semibold text-[#d9d9d9]'>Javascript</span>.</p>
