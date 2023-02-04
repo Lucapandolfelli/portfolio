@@ -1,5 +1,4 @@
 import React from "react"
-
 import { educations } from "../mocks"
 import EducationItem from "./EducationItem"
 

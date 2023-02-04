@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
-
 import { Project } from '../types'
 import Modal from './Modal'
 

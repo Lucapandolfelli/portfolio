@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-
 import { motion } from 'framer-motion'
-
 import { Skill } from '../types'
 
 type Props = {

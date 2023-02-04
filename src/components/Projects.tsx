@@ -1,8 +1,6 @@
 import React from 'react'
-
 import ProjectCard from './ProjectCard'
 import { projects } from '../mocks'
-
 import { motion } from 'framer-motion'
 
 type Props = {}

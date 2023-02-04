@@ -1,7 +1,5 @@
 import React from 'react'
-
 import { motion } from 'framer-motion'
-
 import TechnologyCard from './TechnologyCard'
 import { technologies } from '../mocks'
 
