@@ -21,7 +21,7 @@ export default function EducationItem({ education }: Props){
       <div className='w-full'>
         <h5 className='text-lg xl:text-xl tracking mb-1'>{ education.title }</h5>
         <p className='text-sm sm:text-base text-[#abaeb9] xl:font-semibold mb-1'>{ education.institute }</p>
-        <span className='text-sm font-thin text-[#9396a1]'>{ education.time }</span>
+        <span className='text-sm font-thin text-[#858080]'>{ education.time }</span>
       </div>
     </motion.article>
   )
