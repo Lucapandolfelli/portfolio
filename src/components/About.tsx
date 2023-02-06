@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import image from '../../public/images/about_image.jpeg'
 import perfil from '../../public/images/perfil.jpeg'
 
 type Props = {}
