@@ -26,7 +26,7 @@ export default function Projects({}: Props) {
         initial='hidden'
         whileInView='show'
         className='flex justify-center gap-[1.5rem] flex-wrap'>
-        {projects.map((project) => (
+        {projects.sort((a, b) => b.id - a.id).map((project) => (
           <ProjectCard project={project} key={project.id} />
         ))}
       </motion.ul>
